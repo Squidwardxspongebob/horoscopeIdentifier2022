@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    body {
+      background: url(https://c.tenor.com/UVT6bhgqzPIAAAAM/dreamybull-false.gif);
+      background-size: cover;
+    }
+    .okdis {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #ok {
+      animation: a 1s infinite alternate ease-in-out;
+      background: url(https://c.tenor.com/uqOIuxCZPqgAAAAd/china-flag-chinese.gif);
+      width: 35rem;
+      height: 18rem;
+    }
+    @keyframes a {
+      from {
+        color: pink;
+      }
+      to {
+        color: green;
+      }
+    }
+    @keyframes a {
+      0% {
+        transform: translateX(0);
+      }
+      75% {
+        transform: translateX(50%);
+      }
+      100% {
+        transform: translateX(100%);
+      }
+    }
+    #supreme-lord {
+      background: url(https://upload.wikimedia.org/wikipedia/commons/3/32/Xi_Jinping_2019.jpg);
+      background-size: cover;
+      width: 50px;
+      height: 50px;
+      border: black solid;
+      border-radius: 25px;
+      animation: b 1s infinite ease-in-out;
+    }
+    #supreme-lord2 {
+      background: url(https://ichef.bbci.co.uk/news/976/cpsprodpb/1344B/production/_98032987_gettyimages-810310530.jpg);
+      background-size: cover;
+      width: 100px;
+      height: 100px;
+      border: black solid;
+      border-radius: 50px;
+      animation: b 1s infinite ease-in-out;
+    }
+    @keyframes b {
+      0% {
+        transform: translateX(0);
+      }
+      33% {
+        transform: translateY(100%);
+      }
+      66% {
+        transform: translateX(100%) translateY(100%);
+      }
+      100% {
+        transform: translateX(100%);
+      }
+    }
+    #supreme-lord3 {
+      background: url(https://pbs.twimg.com/profile_images/1255740284912013313/G5LuFvpr_400x400.jpg);
+      background-size: cover;
+      width: 200px;
+      height: 200px;
+      border: black solid;
+      border-radius: 100px;
+      animation: c 1s infinite ease-in-out;
+    }
+    @keyframes c {
+      0% {
+        transform: translateX(0);
+      }
+      33% {
+        transform: translateY(100%);
+      }
+      66% {
+        transform: translateX(100%) translateY(100%);
+      }
+      100% {
+        transform: translateX(100%);
+      }
+    }
+    .xipos {
+      position: absolute;
+      left: 5rem;
+      top: 5rem;
+    }
+    .header {
+      background: url("https://upload.wikimedia.org/wikipedia/commons/f/f6/Flowing_Flag_of_the_People%27s_Republic_of_China_2.gif");
+      background-size: cover;
+      border: black solid;
+      height: 5rem;
+    }
+    #ge {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serifs;
+      font-size: 7rem;
+      display: flex;
+      animation: e 1s infinite alternate ease-in-out;
+      justify-content: center;
+      align-items: center;
+    }
+    @keyframes e {
+      from {
+        color: rgb(255, 255, 255);
+      }
+      to {
+        color: gold;
+      }
+    }
+    #birthday {
+      width: 40vw;
+      height: 10vh;
+      border-radius: 20vw;
+      border: black solid;
+      background: white;
+      font-size: 2vw;
+      font-family: monospace;
+    }
+    #dae {
+      width: 40vw;
+      height: 10vh;
+      border-radius: 20vw;
+      border: black solid;
+      background: white;
+      font-size: 2vw;
+      font-family: monospace;
+    }
+    #output {
+      margin-top: 5vh;
+      font-size: 2vw;
+      border: black solid;
+      background: linear-gradient(to right, rgb(240, 9, 9), rgb(236, 202, 8));
+      cursor: pointer;
+      border-radius: 1vw;
+    }
+    #output:hover {
+      color: gold;
+      padding: 5px;
+      transition-delay: 2s;
+      background: linear-gradient(to right, rgb(9, 240, 182), rgb(236, 8, 198));
+      transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+      animation: b 1s infinite alternate;
+    }
+
+    @keyframes b {
+      from {
+        border: red solid;
+      }
+      to {
+        border: gold solid;
+      }
+    }
+    #aries {
+      background: url(http://images6.fanpop.com/image/photos/41400000/White-haired-girl-with-cute-horns-anime-41437405-820-1147.jpg);
+      background-size: cover;
+    }
+    .aries-text {
+      animation: v 1s infinite alternate;
+    }
+    @keyframes v {
+      from {
+        color: red;
+      }
+      to {
+        color: blue;
+      }
+    }
+    #taurus {
+      background: url(https://img-9gag-fun.9cache.com/photo/ax7MxQD_460s.jpg);
+      background-size: cover;
+    }
+
+    #gemini {
+      background: url(https://honeysanime.com/wp-content/uploads/2017/01/Kiss-x-Sis-dvd.jpg);
+      background-size: cover;
+    }
+    #cancer {
+      background: url(data:image/jpeg;base64,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);
+      background-size: cover;
+    }
+    #leo {
+      background: url(https://cdn.donmai.us/sample/bf/0c/sample-bf0c0880ceefe067b31fbd3333b75b21.jpg);
+      background-size: cover;
+    }
+    #virgo {
+      background: url(https://pbs.twimg.com/media/DosXektW4AA2cmR.jpg);
+      background-size: cover;
+    }
+    #libra {
+      background: url(https://i.pinimg.com/736x/a8/c8/7a/a8c87a4c116cac25e7c4fcec2d6dab48--very-long-hair-purple-hair.jpg);
+      background-size: cover;
+    }
+    #scorpio {
+      background: url(https://thicc.mywaifulist.moe/waifus/27101/8dc5055f6f1ccb3d1360e9e96c477a12c346377867975b6eaee8284b231aab3d_thumb.png);
+      background-size: cover;
+    }
+    #sagittarius {
+      background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b18eab69-7cfa-4f62-ad0c-182a0c3c5a41/d8xwmf5-af5ca466-deaf-4ba3-b55f-19b38d14958b.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2IxOGVhYjY5LTdjZmEtNGY2Mi1hZDBjLTE4MmEwYzNjNWE0MVwvZDh4d21mNS1hZjVjYTQ2Ni1kZWFmLTRiYTMtYjU1Zi0xOWIzOGQxNDk1OGIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.NwiIOx3xZC6E7ex_DgqgpjO4NlV_Y5kLxB0qEM-qvus);
+      background-size: cover;
+    }
+    #capricorn {
+      background: url(https://w.wallhaven.cc/full/r2/wallhaven-r28xzj.jpg);
+      background-size: cover;
+    }
+    #aquarius {
+      background: url(https://m.media-amazon.com/images/I/81P8W+VrRIL._AC_SL1500_.jpg);
+      background-size: cover;
+    }
+    #pisces {
+      background: url(https://cutewallpaper.org/21/anime-mermaid-girl/Anime-Mermaid.png);
+      background-size: cover;
+    } 
+    .super-con{
+      position:absolute;
+      left:25vw;
+
+    }
+  </style>
+  <body>
+    <div class="header" style="display: grid">
+      <h4 id="ge"><b>HOROSCOPE</b></h4>
+    </div>
+    <div class="okdis">
+      <h1 id="ok" style="font-family: monospace; font-size: 5rem">
+        <b>2022</b>
+      </h1>
+      <div class="flag1"></div>
+      <div class="flag2"></div>
+      <div class="flag3"></div>
+    </div>
+    <div class="xipos">
+      <div id="supreme-lord"></div>
+      <div id="supreme-lord2"></div>
+      <div id="supreme-lord3"></div>
+    </div>
+    <div class="super-con">
+    <section>
+     
+      <div style="width: 15rem;height:5rem;border:black solid; font-family:papyrus; background:brown;margin-bottom:15px">note: use only lower case letter, so u can get ur horoscope ogey - Supreme leader Xi Jinping</div>
+      <input id="birthday" type="text" value="month" /> <br />
+      <input id="dae" type="text" value="day" /> <br />
+      <button id="output" onclick="horosCope()">get ur HOROSCOPE</button>
+     
+      <div id="pisces" style=" position: absolute; display:none; left: 15rem; width: 15rem; height: 15rem; border: black solid">
+      <div id="aries-text" style="font-size: 2vw; color: rgb(255, 8, 0)">
+        pisces
+       <button onclick="ariesX11()" style=" position: absolute;
+    right: 5px;top:5px; cursor:pointer; background:red;color:black">X</button>
+      </div>
+    </div>
+
+      <div id="aquarius" style=" position: absolute; display:none; left: 15rem; width: 15rem; height: 15rem; border: black solid">
+      <div id="aries-text" style="font-size: 2vw; color: rgb(255, 8, 0)">
+        aquarius
+       <button onclick="ariesX10()" style=" position: absolute;
+    right: 5px;top:5px; cursor:pointer; background:red;color:black">X</button>
+      </div>
+    </div>
+
+      <div id="capricorn" style=" position: absolute; display:none; left: 15rem; width: 15rem; height: 15rem; border: black solid">
+      <div id="aries-text" style="font-size: 2vw; color: rgb(255, 8, 0)">
+        capricorn
+       <button onclick="ariesX9()" style=" position: absolute;
+    right: 5px;top:5px; cursor:pointer; background:red;color:black">X</button>
+      </div>
+    </div>
+
+      <div id="sagittarius" style=" position: absolute; display:none; left: 15rem; width: 15rem; height: 15rem; border: black solid">
+      <div id="aries-text" style="font-size: 2vw; color: rgb(255, 8, 0)">
+        sagittarius
+       <button onclick="ariesX8()" style=" position: absolute;
+    right: 5px;top:5px; cursor:pointer; background:red;color:black">X</button>
+      </div>
+    </div>
+
+      <div id="scorpio" style=" position: absolute; display:none; left: 15rem; width: 15rem; height: 15rem; border: black solid">
+      <div id="aries-text" style="font-size: 2vw; color: rgb(255, 8, 0)">
+        scorpio
+       <button onclick="ariesX7()" style=" position: absolute;
+    right: 5px;top:5px; cursor:pointer; background:red;color:black">X</button>
+      </div>
+    </div>
+
+      <div id="libra" style=" position: absolute;display:none;  left: 15rem; width: 15rem; height: 15rem; border: black solid">
+      <div id="aries-text" style="font-size: 2vw; color: rgb(255, 8, 0)">
+        libra
+       <button onclick="ariesX6()" style=" position: absolute;
+    right: 5px;top:5px; cursor:pointer; background:red;color:black">X</button>
+      </div>
+    </div>
+
+      <div id="virgo" style=" position: absolute;display:none; left: 15rem;   width: 15rem; height: 15rem; border: black solid">
+      <div id="aries-text" style="font-size: 2vw; color: rgb(255, 8, 0)">
+        virgo
+       <button onclick="ariesX5()" style=" position: absolute;
+    right: 5px;top:5px; cursor:pointer; background:red;color:black">X</button>
+      </div>
+    </div>
+
+      <div id="leo" style="position: absolute; display:none; left: 15rem;  width: 15rem; height: 15rem; border: black solid">
+      <div id="aries-text" style="font-size: 2vw; color: rgb(255, 8, 0)">
+        leo
+       <button onclick="ariesX4()" style=" position: absolute;
+    right: 5px;top:5px; cursor:pointer; background:red;color:black">X</button>
+      </div>
+    </div>
+
+<div id="cancer" style=" position: absolute;display:none; left: 15rem; width: 15rem; height: 15rem; border: black solid">
+      <div id="aries-text" style="font-size: 2vw; color: rgb(255, 8, 0)">
+        cancer
+       <button onclick="ariesX3()" style=" position: absolute;
+    right: 5px;top:5px; cursor:pointer; background:red;color:black">X</button>
+      </div>
+    </div>
+
+   <div id="gemini" style="  position: absolute;display:none; left: 15rem;width: 15rem; height: 15rem; border: black solid">
+      <div id="aries-text" style="font-size: 2vw; color: rgb(255, 8, 0)">
+        gemini
+       <button onclick="ariesX2()" style=" position: absolute;
+    right: 5px;top:5px; cursor:pointer; background:red;color:black">X</button>
+      </div>
+    </div>
+    </section>
+
+    <div id="aries" style=" position: absolute; display:none;
+        left: 15rem;width: 15rem; height: 15rem; border: black solid">
+      <div id="aries-text" style="font-size: 2vw; color: rgb(255, 8, 0)">
+        Aries
+       <button onclick="ariesX()" style=" position: absolute;
+    right: 5px;top:5px; cursor:pointer; background:red;color:black">X</button>
+      </div>
+    </div>
+    <div id="taurus" style=" position: absolute;display:none;left: 15rem; width: 15rem; height: 15rem; border: black solid">
+      <div  style="font-size: 2vw; color: rgb(72, 255, 0)">
+        taurus
+         <button onclick="ariesX1()" style=" position: absolute;
+    right: 5px;top:5px; cursor:pointer; background:red;color:black">X</button>
+      </div>
+
+      </div>
+        <script>
+      function ariesX() {
+        document.getElementById("aries").style.display="none";
+      }
+      function ariesX1() {
+        document.getElementById("taurus").style.display="none";
+      }
+      function ariesX2() {
+        document.getElementById("gemini").style.display="none";
+      }
+       function ariesX3() {
+        document.getElementById("cancer").style.display="none";
+      }
+      function ariesX4() {
+        document.getElementById("leo").style.display="none";
+      }
+      function ariesX5() {
+        document.getElementById("virgo").style.display="none";
+      }
+       function ariesX6() {
+        document.getElementById("libra").style.display="none";
+      }
+      function ariesX7() {
+        document.getElementById("scorpio").style.display="none";
+      }
+      function ariesX8() {
+        document.getElementById("sagittarius").style.display="none";
+      }
+       function ariesX9() {
+        document.getElementById("capricorn").style.display="none";
+      }
+       function ariesX10() {
+        document.getElementById("aquarius").style.display="none";
+      }
+      function ariesX11() {
+        document.getElementById("pisces").style.display="none";
+      }
+      function horosCope() {
+        var month = document.getElementById("birthday").value;
+        var day = document.getElementById("dae").value;
+        var month1 = "january";
+        var month2 = "febuary";
+        var month3 = "march";
+        var month4 = "april";
+        var month5 = "may";
+        var month6 = "june";
+        var month7 = "july";
+        var month8 = "august";
+        var month9 = "september";
+        var month10 = "october";
+        var month11 = "november";
+        var month12 = "december";
+        if (
+          (month == month3 && day != 20 && day <= 31) ||
+          (month == month4 &&
+            day != 18 &&
+            day != 21 &&
+            day != 22 &&
+            day != 23 &&
+            day != 24 &&
+            day <= 19)
+        ) {
+          var print = document.getElementById("aries").style.display="flex";
+        }
+
+        if (
+          (month == month4 &&  day != 1 &&
+            day != 2 &&
+            day != 3 &&
+            day != 4 &&
+            day != 5 &&
+            day != 6 &&
+            day != 7 &&
+            day != 8 &&
+            day != 9 &&
+            day != 10 &&
+            day != 11 &&
+            day != 12 &&
+            day != 13 &&
+            day != 14 &&
+            day != 15 &&
+            day != 16 &&
+            day != 17 &&
+            day != 18 &&
+            day != 19 &&
+            day <= 30) ||
+          (month == month5 && day != 30 && day <= 20)
+        ) {
+         
+             var print = document.getElementById("taurus").style.display="flex";
+        }
+
+        if (
+          (month == month5 &&
+            day != 1 &&
+            day != 2 &&
+            day != 3 &&
+            day != 4 &&
+            day != 5 &&
+            day != 6 &&
+            day != 7 &&
+            day != 8 &&
+            day != 9 &&
+            day != 10 &&
+            day != 11 &&
+            day != 12 &&
+            day != 13 &&
+            day != 14 &&
+            day != 15 &&
+            day != 16 &&
+            day != 17 &&
+            day != 18 &&
+            day != 19 &&
+            day != 20 &&
+            day <= 31) ||
+          (month == month6 && day != 31 && day <= 20)
+        ) {
+           var print = document.getElementById("gemini").style.display="flex";
+        }
+
+        if (
+          (month == month6 &&
+            day != 1 &&
+            day != 2 &&
+            day != 3 &&
+            day != 4 &&
+            day != 5 &&
+            day != 6 &&
+            day != 7 &&
+            day != 8 &&
+            day != 9 &&
+            day != 10 &&
+            day != 11 &&
+            day != 12 &&
+            day != 13 &&
+            day != 14 &&
+            day != 15 &&
+            day != 16 &&
+            day != 17 &&
+            day != 18 &&
+            day != 19 &&
+            day != 20 &&
+            day <= 30) ||
+          (month == month7 &&
+            day != 1 &&
+            day != 2 &&
+            day != 3 &&
+            day != 4 &&
+            day != 5 &&
+            day != 6 &&
+            day != 7 &&
+            day != 8 &&
+            day != 9 &&
+            day != 10 &&
+            day != 11 &&
+            day != 12 &&
+            day != 13 &&
+            day != 14 &&
+            day != 15 &&
+            day != 16 &&
+            day != 17 &&
+            day != 18 &&
+            day != 19 &&
+            day != 20 &&
+            day != 21 &&
+            day <= 22)
+        ) {
+          var print = document.getElementById("cancer").style.display="flex";
+        }
+
+        if (
+          (month == month7 && day != 22 && day <= 31) ||
+          (month == month8 && day != 31 && day <= 22)
+        ) {
+         var print = document.getElementById("leo").style.display="flex";
+        }
+
+        if (
+          (month == month8 && day != 22 && day <= 31) ||
+          (month == month9 && day != 31 && day <= 22)
+        ) {
+          var print = document.getElementById("virgo").style.display="flex";
+        }
+
+        if (
+          (month == month9 &&
+            day != 1 &&
+            day != 2 &&
+            day != 3 &&
+            day != 4 &&
+            day != 5 &&
+            day != 6 &&
+            day != 7 &&
+            day != 8 &&
+            day != 9 &&
+            day != 10 &&
+            day != 11 &&
+            day != 12 &&
+            day != 13 &&
+            day != 14 &&
+            day != 15 &&
+            day != 16 &&
+            day != 17 &&
+            day != 18 &&
+            day != 19 &&
+            day != 20 &&
+            day != 21 &&
+            day != 22 &&
+            day <= 30) ||
+          (month == month10 && day != 30 && day <= 22)
+        ) {
+           var print = document.getElementById("libra").style.display="flex";
+        }
+
+        if (
+          (month == month10 && day != 22 && day <= 31) ||
+          (month == month11 && day != 31 && day <= 21)
+        ) {
+          var print = document.getElementById("scorpio").style.display="flex";
+        }
+
+        if (
+          (month == month11 &&
+            day != 1 &&
+            day != 2 &&
+            day != 3 &&
+            day != 4 &&
+            day != 5 &&
+            day != 6 &&
+            day != 7 &&
+            day != 8 &&
+            day != 9 &&
+            day != 10 &&
+            day != 11 &&
+            day != 12 &&
+            day != 13 &&
+            day != 14 &&
+            day != 15 &&
+            day != 16 &&
+            day != 17 &&
+            day != 18 &&
+            day != 19 &&
+            day != 20 &&
+            day != 21 &&
+            day <= 30) ||
+          (month == month12 && day != 18 && day != 19 && day != 20 && day <= 21)
+        ) {
+         var print = document.getElementById("sagittarius").style.display="flex";
+        }
+
+        if (
+          (month == month12 &&
+            day != 1 &&
+            day != 2 &&
+            day != 3 &&
+            day != 4 &&
+            day != 5 &&
+            day != 6 &&
+            day != 7 &&
+            day != 8 &&
+            day != 9 &&
+            day != 10 &&
+            day != 11 &&
+            day != 12 &&
+            day != 13 &&
+            day != 14 &&
+            day != 15 &&
+            day != 16 &&
+            day != 17 &&
+            day != 18 &&
+            day != 19 &&
+            day != 20 &&
+            day != 21 &&
+            day <= 31) ||
+          (month == month1 && day != 31 && day <= 19)
+        ) {
+          var print = document.getElementById("capricorn").style.display="flex";
+        }
+
+        if (
+          (month == month1 &&
+            day != 1 &&
+            day != 2 &&
+            day != 3 &&
+            day != 4 &&
+            day != 5 &&
+            day != 6 &&
+            day != 7 &&
+            day != 8 &&
+            day != 9 &&
+            day != 10 &&
+            day != 11 &&
+            day != 12 &&
+            day != 13 &&
+            day != 14 &&
+            day != 15 &&
+            day != 16 &&
+            day != 17 &&
+            day != 18 &&
+            day != 19 &&
+            day <= 31) ||
+          (month == month2 && day != 31 && day <= 18)
+        ) {
+           var print = document.getElementById("aquarius").style.display="flex";
+        }
+
+        if (
+          (month == month2 &&
+            day != 1 &&
+            day != 2 &&
+            day != 3 &&
+            day != 4 &&
+            day != 5 &&
+            day != 6 &&
+            day != 7 &&
+            day != 8 &&
+            day != 9 &&
+            day != 10 &&
+            day != 11 &&
+            day != 12 &&
+            day != 13 &&
+            day != 14 &&
+            day != 15 &&
+            day != 16 &&
+            day != 17 &&
+            day != 18 &&
+            day <= 28) ||
+          (month == month3 && day != 28 && day <= 20)
+        ) {
+           var print = document.getElementById("pisces").style.display="flex";
+        }
+      }
+      horosCope();
+    </script>
+  </body>
+</html>
